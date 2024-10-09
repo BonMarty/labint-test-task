@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Graphik LCG Regular';
+  src: url('./fonts/GraphikLCG-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Graphik LCG Semibold';
+  src: url('./fonts/GraphikLCG-Semibold.ttf');
+}
+
+html,
+body {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  font-family: 'Graphik LCG Regular';
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+  top: calc(50% - 48px) !important;
+}
+
+.swiper-button-disabled {
+  color: #c2c8cd;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 8px !important;
+}
+
+.swiper-slide {
+  display: flex !important;
+  flex-grow: 1 !important;
+  height: auto !important;
+}
+
+@media screen and (min-width: 1920px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+  }
+}
